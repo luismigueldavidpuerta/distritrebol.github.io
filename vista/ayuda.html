@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="img/12.JPG" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,7 +30,6 @@
         <a class="nav-link" href="file:///C:/Users/Usuario/Desktop/proyecto/vista/Noticias.html">Noticias</a>
       </li>
       <li class="nav-item active">
-        
         <a class="nav-link" href="../vista/ayuda.html">registro</a>
       </li>
 
@@ -41,43 +40,16 @@
   </div>
 </nav>
 </head>
-<body style="background:green">
-	<div style="width: 90%;background:#79b591;margin:0 auto">
+<body style="background:#52BE80">
+  <form  method="post" class="form-line my-2 my-lg-4" onsubmit="return validar();" >
+        <input id="usuario" type="email" name="usuario" placeholder="usuario"  class="form-control mr-sm-2" required=""><br>
+        <input id="password" type="password" name="password" placeholder="password"  class="form-control mr-sm-5" required=""><br>
+        <button type="submit" value="registro" class="btn enviar" style="background:white;" class="btn btn-outline-success my-2 my-sm-0" id="alerta" type="submit" onclick="getdata()" >Enviar</button><br>
+      </form>
 
-		<h1>Nuestros servicios</h1>	
-		<ol>
-		<li>Productos de alta calidad </li>
-		<li>Grandiosos descuentos</li>
-		<li>Deliciosa variedad de sabores</li>
-		</ol>
-		<ol type="i">
+<script src="../js/script.js"></script>
 
-		<h2>Sugerencias</h2>
-
-		<label>Nombre:</label><br>
-
-		<input type="text" name="nombre"><br>
-		<br>
-		<label>Edad:</label><br>
-
-		<input type="number" name="edad"><br>
-		<br>
-		<label>Correo:</label><br>
-
-		<input type="email" name="correo"><br>
-		<br>
-		<label>Teléfono:</label><br>
-
-		<input type="tel" name="celular" pattern="[0-9]{3}[0-9]{7}"><br>
-		<br>
-		<label>Sugerencia:</label><br>		
-		<textarea name="sugerencia" rows="10" cols="30">
-		</textarea><br>
-		<br>
-		<input type="submit" value="Enviar"><br>
-		</ol>
-		</nav>
-	</div>
+</body>
   <footer class="pie" style="width:100%;background:#98ff98;">
      <h4>
               nombre:Luis Felipe David Ocampo
@@ -91,7 +63,7 @@
        <h4>
           Domicilios al 3148408697
       </h4>
-            
+          
 </footer>
-</body>
+<script src="../js/script.js"></script>
 </html>
