@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/tienda.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../distritrebol/css/nostros.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/formato.css"/>
+    <title>Distritrebol</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=Ae65Nm8coLuS2Z4XqMNRlvDXdNWahtIT2o_Hoii6MdtyShwYOZ06r8ah4nrE2WYmSQznLU-DtOIZnfWu&currency=USD"></script>
+
+     <!-- CSS only -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+     crossorigin="anonymous"
+   />
+
+</head>
+<body style="background: linear-gradient(#ffaee7, #fadcf1);">
+    
+    <div >
+
+    <head>
+  <nav class="navbar sticky-top navbar-expand-lg " style="background-color:#7A542D  ;opacity: 90%;padding: 6px 0 ;">
+    <div class="container-fluid " >
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+        <a href="../index.html" style="color:white;margin-right: 30px;margin-left: 30px;" class="link navbar-brand"><li>Inicio</li></a>
+        </li>
+          <li class="nav-item">
+            <a href="../vista/tienda.html" style="color:white;margin-right: 30px;margin-left: 30px;" class="link nav-link active "  aria-current="page"><li>Tienda</li></a>
+          </li>
+          <li class="nav-item">
+            <a href="../vista/nosotros.html" style="color:white;margin-right: 30px;margin-left: 30px;" class="link nav-link active "  aria-current="page"><li>Contacto</li></a>
+          </li>
+          <li class="../nav-item">
+            <a href="../vista/login.php" style="color:white;margin-right: 30px;margin-left: 30px;" class="link nav-link active "  aria-current="page"><li>login</li></a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+        
+
+    </head>
+
+    <div class="container-fluid bg-dark position-sticky top-0">
+      <ul
+        class="nav nav-pills mb-3 py-3 container"
+        id="pills-tab"
+        role="tablist"
+      >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Productos</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Carrito</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Producto removido!
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+        1
+      </div>
+      <div
+        class="tab-pane fade show active container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+        <h2 class="h4 m-4 text-light">Productos</h2>
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4" >
+
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-light"><strong>Fruticas</strong></h5>
+              <img src="../img/productos/frutas.png" class="card-img-top" alt="Fruticas de Colombina">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Disfruta de Fruticas x 50und en cualquier lugar y cualquier momento.                
+                <h5 class="text-light">Precio: <span class="precio">$ 2.000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-light"><strong>Choco Break Frutos Del Bosque</strong></h5>
+              <img src="../img/productos/fruto.png" class="card-img-top" alt="Choco Break Frutos Ded Bosque">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Regálate un momento perfecto con el nuevo Choco Break Frutos del Bosque.</p>
+                <h5 class="text-light">Precio: <span class="precio">$ 5.000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-light"><strong></strong>Galletas Wafer Capri</strong></h5>
+              <img src="../img/productos/gallecapri.png" class="card-img-top" alt="Galletas Wafer Capri">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Galletas wafer con crema, sabor a vainilla, por 24 unidades.</p>
+                <h5 class="text-light">Precio: <span class="precio">$ 5.500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-light"><strong>Quimbaya Bridge</strong></h5>
+              <img src="../img/productos/gallekim.png" class="card-img-top" alt="Quimbaya Bridge">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Bocados De Galletas Wafer Cubiertos Con Un Exquisito Sabor A Chocolate.</p>
+                <h5 class="text-light">Precio: <span class="precio">$ 3.000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-light"><strong>Trululu Snacks Splash</strong></h5>
+              <img src="../img/productos/gomspash.png" class="card-img-top" alt="Trululu Snacks Splash">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Tortugas, sapos y pulpos de gomita rellenos de jalea, ideales para cumpleaños, piñatas, baby shower.</p>
+                <h5 class="text-light">Precio: <span class="precio">$ 2.000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-light"><strong>Franki</strong></h5>
+              <img src="../img/productos/trulufranki.png" class="card-img-top" alt="Trululu Franki">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Ha llegado para llenarnos de diversion en esta escalofriante temporada de halloween con sus deliciosos cerebros.</p>
+                <h5 class="text-light">Precio: <span class="precio">$ 2.000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-light"><strong>Fresitas</strong></h5>
+              <img src="../img/productos/trulfres.png" class="card-img-top" alt="Trululu fresitas">
+              <div class="card-body">
+                <p class="card-text text-white-50 description"> Esponjosas gomitas con cremoso sabor a fresa, ideales para cumpleaños, piñatas, baby shower.</p>
+                <h5 class="text-light">Precio: <span class="precio">$ 2.000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-light"><strong>PinPop Bumba Gigante</strong></h5>
+              <img src="../img/productos/pinpop.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Caramelo duro tipo chupeta sabor a fresa relleno con goma de mascar saber a fresa.</p>
+                <h5 class="text-light">Precio: <span class="precio">$ 7.000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          
+        
+          
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+        
+        <!-- <a href="pago.html">
+          <button style="background-color: #ffaee7; border: none;" class="btn btn-primary">COMPRAR</button>
+        </a> -->
+        </div>
+
+        <div id="paypal-button-container"></div>
+
+
+
+      </div>
+      
+      </div>
+    </div>
+
+    <footer>
+
+      <div class="contact-info">
+  
+        <div class="contact">
+          <ul>
+            <li><a href="../vista/nosotros.html">Contáctanos</a></li>
+            <li><a href="../vista/politicas.html">Politica de privacidad</a></li>
+            <li><a href="../vista/reembolso.html">Politica de reembolso</a></li>
+            <li><a href="../vista/terminos.html">Términos del servicio</a></li>
+          </ul>
+        </div>
+  
+        <div class="social-media">
+          <p>Siguenos</p>
+          <ul>
+            <li><a href="https://www.facebook.com" target="_blank"
+              ><img src="../img/facebook.png" title="facebook"
+            /></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"
+              ><img src="../img/twitter.svg" title="twitter"
+            /></a></li>
+          </ul>
+        </div>
+  
+        <div class="social-media">
+          <p>©2022, Distritrebol</p>
+          <ul>
+            <li><a href="#" target="_blank"
+              ><img src="../img/logo propio.png" title="twitter"
+            /></a></li>
+            <li><a href="#">Luis Miguel</a></li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+    </footer>
+  
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/jquery/carrito.js"></script>
+  </body>
+</html>
